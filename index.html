@@ -5,18 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile first</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <nav>
-            <ul>
-                <li> <a href="">Product</a> </li>
-                <li><a href="">Service</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topnav">
+            <a href="#home" class="active">Logo</a>
+            <div id="myLinks">
+                <a href="#news">Product</a>
+                <a href="#contact">Service</a>
+                <a href="#about">Contact</a>
+            </div>
+            <div class="burger">
+                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                     <i class="fa fa-bars"></i>
+                </a>
+            </div>
+           
+        </div>
+        <h2>Mobile View First</h2>
+        
         <div class="container">
             
             <div class="left sizes">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, at. Nostrum commodi, alias eveniet maxime suscipit nam ea inventore qui in quisquam veniam sunt fugit pariatur rerum? Assumenda quod, debitis, corporis ipsam quisquam maxime architecto nobis voluptatem numquam voluptatum vero?</div>
@@ -24,5 +34,16 @@
             
         </div>
     </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                 x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+}
+    </script>
 </body>
 </html>
