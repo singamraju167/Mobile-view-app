@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.left {
+    background-color: white;
+}
+
+.right {
+    background-color: gray;
+}
+
+.sizes {
+    width: 80vw;
+    margin: 1em auto;
+    padding: 1rem;
+}
+
+@media(min-width:768px) {
+    .container {
+        width: min(991px, 80%);
+        margin: auto;
+        background-color: aquamarine;
+        display: flex;
+    }
+}
