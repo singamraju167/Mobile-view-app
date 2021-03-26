@@ -61,7 +61,6 @@
         }
         .links {
             margin: 1rem;
-            background-color: black;
             color: white;
             display: flex;
             margin-left: auto;
@@ -97,14 +96,12 @@
             display: block;
         }
         .navbar a.icon {
-            background: black;
             display: block;
             position: absolute;
             right: 0;
             top: 0;
         }
         .navbar a:hover {
-            background-color: #ddd;
             color: black;
         }
         .active {
@@ -127,7 +124,6 @@
             display: block;
         }
         .navbar a.icon {
-            background: black;
             display: block;
             position: absolute;
             right: 0;
